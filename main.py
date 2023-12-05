@@ -87,6 +87,8 @@ right = RightPaddle()
 
 window.screen.onkey(right.go_up, 'Up')
 window.screen.onkey(right.go_down, 'Down')
+window.screen.onkey(left.go_up, 'W')
+window.screen.onkey(left.go_down, 'S')
 
 while GAME_MODE:
     window.screen.update()
