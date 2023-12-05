@@ -30,9 +30,11 @@ while GAME_MODE:
    
     if ball.xcor() > 380:
        ball.reset_position()
+       score_board.left_point()
     
     if ball.xcor() < -380:
         ball.reset_position()
+        score_board.right_point()
        
 window.screen.exitonclick()
        
