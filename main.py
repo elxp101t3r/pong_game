@@ -67,7 +67,7 @@ class LeftPaddle(Paddle):
         super().__init__()
         self.goto(x=-350, y=0)
         self.showturtle()
-        self.r_move = [self.go_up, self.go_down]
+        
     def go_up(self):
         self.the_y = self.ycor() + 20
         self.goto(self.xcor(), self.the_y)
@@ -78,6 +78,7 @@ class LeftPaddle(Paddle):
        
         
 window = Window()
+window.screen.tracer(0)
 score_board = ScoreBoard()
 window.screen.listen()
 left = LeftPaddle()
@@ -86,7 +87,6 @@ right = RightPaddle()
 
 window.screen.onkey(right.go_up, 'Up')
 window.screen.onkey(right.go_down, 'Down')
-window.screen.onkeypress(choice(left.r_move))
 
 while GAME_MODE:
     window.screen.update()
