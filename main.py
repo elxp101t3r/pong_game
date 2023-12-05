@@ -12,6 +12,23 @@ class Window:
         self.screen.title('Pong')
 
 
+class ScoreBoard(Turtle):
+    def __init__(self):
+        super().__init__()
+        self.color('white')
+        self.score1 = 0
+        self.score2 = 0
+        self.hideturtle()
+        self.penup()
+        self.goto(-30, 240)
+        self.write("{}".format(self.score1), align="center", font=("Arial", 44))
+        
+        self.goto(30, 240)
+        self.write("{}".format(self.score2), align="center", font=("Arial", 44))
+        
+                                                                              
+
+
 class Ball(Turtle):
     def __init__(self):
         super().__init__()
@@ -63,6 +80,7 @@ class LeftPaddle(Paddle):
        
         
 window = Window()
+score_board = ScoreBoard()
 window.screen.listen()
 left = LeftPaddle()
 ball = Ball()
