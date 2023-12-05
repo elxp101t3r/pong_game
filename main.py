@@ -26,9 +26,7 @@ class ScoreBoard(Turtle):
         self.goto(30, 240)
         self.write("{}".format(self.score2), align="center", font=("Arial", 44))
         
-                                                                              
-
-
+                                                    
 class Ball(Turtle):
     def __init__(self):
         super().__init__()
