@@ -7,8 +7,8 @@ class Ball(Turtle):
         self.shape('circle')
         self.shapesize(stretch_wid=1, stretch_len=1)
         self.penup()
-        self.x_move = 3
-        self.y_move = 3
+        self.x_move = 1
+        self.y_move = 1
         
     def move(self):
         the_x = self.xcor() + self.x_move
