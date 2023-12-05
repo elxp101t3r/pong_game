@@ -1,4 +1,3 @@
-from turtle import Turtle, Screen
 from window import Window
 from scoreboard import ScoreBoard
 from ball import Ball
