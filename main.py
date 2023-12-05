@@ -28,5 +28,11 @@ while GAME_MODE:
     if ball.distance(right) < 50 and ball.xcor() > 320 or ball.distance(left) < 50 and ball.xcor() < -320:
         ball.bounce_x()
    
+    if ball.xcor() > 380:
+       ball.reset_position()
+    
+    if ball.xcor() < -380:
+        ball.reset_position()
+       
 window.screen.exitonclick()
        
