@@ -7,7 +7,7 @@ from left_paddle import LeftPaddle
 GAME_MODE = True
                                                    
 window = Window()
-window.screen.tracer(0)
+
 score_board = ScoreBoard()
 window.screen.listen()
 left = LeftPaddle()
@@ -21,7 +21,7 @@ window.screen.onkey(left.go_down, 'S')
 
 while GAME_MODE:
     window.screen.update()
-    
-
+   
+   
 window.screen.exitonclick()
        

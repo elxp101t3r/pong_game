@@ -1,4 +1,5 @@
 from paddles import Paddle
+
 class RightPaddle(Paddle):
     def __init__(self):
         super().__init__()
