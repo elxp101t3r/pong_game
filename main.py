@@ -21,7 +21,7 @@ window.screen.onkey(left.go_down, 'S')
 
 while GAME_MODE:
     window.screen.update()
-   
+    ball.move()
    
 window.screen.exitonclick()
        
