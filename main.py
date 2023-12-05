@@ -22,6 +22,8 @@ window.screen.onkey(left.go_down, 'S')
 while GAME_MODE:
     window.screen.update()
     ball.move()
+    if ball.ycor() > 300 or ball.ycor() < -300:
+        ball.bounce()
    
 window.screen.exitonclick()
        
